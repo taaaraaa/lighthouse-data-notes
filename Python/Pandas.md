@@ -1,3 +1,6 @@
+These notes are from [365datascience](https://learn.365datascience.com/courses/preview/data-cleaning-preprocessing-pandas/)
+
+
 ## 1. Methods: From Data
 Although attributes are about matadata, Methods are about functionalities and behaviour of the object.
 Different libraries have different methods. Methods manipulate object, thus each object have its own methods. For example, methods used for Series cannot be used for DataFrames and vise versa.
@@ -51,7 +54,7 @@ x['product A']=x[0]
 It is a great reference for different Pandas Methods, Parameteres and so on! Click [Here](https://pandas.pydata.org/docs/user_guide/index.html) to access it!
 
 ## 7. Data Types in Pandas:
-- Series
+### 7-1 Series
 
     Similar to arrays in Numpy. To create one we can do by the following:
 ``` Python
@@ -59,4 +62,18 @@ It is a great reference for different Pandas Methods, Parameteres and so on! Cli
 y=['cat','dog','horse']
 x=pd.Series(y,index=['animal 1','animal 2', 'animal 3'])
 ```
-- DataFrame
+### 7-2 DataFrame
+- It is the mostly used pandas object.
+- It is a collection of multipe Series
+- Series are one-dimensional, containing values along a single axis(rows)
+- DataFrame contains values not only in rows, bult also in columns. So it is the closest python analogue to a standard two-dimentional data set or as a spreadsheet
+- DataFrame= Two-dimentional data structure= Two-dimentional NumPy array= 2-D Matrix
+- While Series are single column data, DataFrame are Multi-column data
+- Every column represent a different data type, so each column can have its own data type, but each column should contain the same data type!
+
+![DataFrame Vs Series](/pics/DataFrame-VS-Series.png)
+
+![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
+
+![DataFrame Vs Series](/pics/DataFrame-VS-Series-3.png)
+
