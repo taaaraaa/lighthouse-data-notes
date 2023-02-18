@@ -2,6 +2,8 @@
 ## 2. Parameters
 ## 3. Arguments
 ## 4 Attributes
+Information about the metadata
+
 x.dtype
 
 x.size
