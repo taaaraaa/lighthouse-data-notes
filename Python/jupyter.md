@@ -30,6 +30,8 @@ O = Hides and unhides output!
 
 L= Line numbers appear the left of each row!
 
+Shift+tab = See documentation
+
 
 ## Kernel
 - Restart and Clear output: The codes will remain without having been run. You would see No output

@@ -7,11 +7,23 @@ x.max()
 x.min()
 x.idxmax()
 x.idxmin()
+x.head()
+x.tail()
 ```
 
 Methods and functions are very similar. They both make specific opertions and return an output
 ## 2. Parameters
+Parameters are associated with certain pandas method to modify the reuslts. It is a good practice to write the parameters with right acronym and right order!
+
+We can be specific about Method outputs. It is where parameter comes!
+``` Python
+x.head(10)
+x.tail(14)
+```
 ## 3. Arguments
+Artument is the number we give to Parameter. In the previous example, 10 and 14 are arguments.
+### Pandas **Methods** have **Parameters** you can supply with **Arguments** to modify the perfomance of the given method!
+
 ## 4 Attributes: About Data
 Information about the metadata
 Attributes are Passive while Methods are Active
@@ -36,6 +48,7 @@ x[0]
 x['product A']=x[0]
 ```
 ## 6. Pandas Documentation
+It is a great reference for different Pandas Methods, Parameteres and so on! Click [Here](https://pandas.pydata.org/docs/user_guide/index.html) to access it!
 
 ## 7. Data Types in Pandas:
 - Series
