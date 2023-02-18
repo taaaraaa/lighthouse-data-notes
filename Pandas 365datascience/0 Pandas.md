@@ -71,6 +71,11 @@ x=pd.Series(y,index=['animal 1','animal 2', 'animal 3'])
 - While Series are single column data, DataFrame are Multi-column data
 - Every column represent a different data type, so each column can have its own data type, but each column should contain the same data type!
 
+Data Frames has the following parameters:
+- data
+- column
+- index
+
 ![DataFrame Vs Series](/pics/DataFrame-VS-Series.png)
 
 ![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
