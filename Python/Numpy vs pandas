@@ -1,0 +1,4 @@
+- Pandas is built on Numpy
+- Numpy workds with Numerical data, while pandas work on both numerical and non-numerical data
+- Numpy has Mathematical functions
+- Mathematical Functions in Numpy would work fine in Pandas as well, but there are some non-mathematical functions in Pandas that are for non-numerical data!

@@ -1,8 +1,20 @@
-## 1. Methods
+## 1. Methods: From Data
+Although attributes are about matadata, Methods are about functionalities and behaviour of the object.
+Different libraries have different methods. Methods manipulate object, thus each object have its own methods. For example, methods used for Series cannot be used for DataFrames and vise versa.
+``` Python
+x.sum()
+x.max()
+x.min()
+x.idxmax()
+x.idxmin()
+```
+
+Methods and functions are very similar. They both make specific opertions and return an output
 ## 2. Parameters
 ## 3. Arguments
-## 4 Attributes
+## 4 Attributes: About Data
 Information about the metadata
+Attributes are Passive while Methods are Active
 
 x.dtype
 
