@@ -7,15 +7,18 @@ x.dtype
 x.size
 
 x.name
+
+x.index
+
 ## 5. Index Values
 - Label based indexing
-- Position based indexing
+- Position based indexing = Axis Labels ~ a non numeric index
 ``` Python
 # to know what are the indexes
 x.index
 # to get the value of a specific position-based index 
 x[0]
-# to get the value of a specific label based index - example. In this examle we can also use the previous method! (suppose Product A is the first data in the Series)
+# to get the value of a specific label-based index - example. In this examle we can also use the previous method! (suppose Product A is the first data in the Series)
 x['product A']=x[0]
 ```
 ## 6. Pandas Documentation
