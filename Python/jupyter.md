@@ -15,4 +15,4 @@ Ctl + enter= runs the code
 
 Shift + enter= runs the code and open a new code box
 
-
+M = converts the code box to Markdown box. Then hit enter to put some text
