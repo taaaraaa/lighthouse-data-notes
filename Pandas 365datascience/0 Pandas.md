@@ -20,6 +20,18 @@ x.sort_values() #Sorts in Ascending order
 .copy() #copies the dataset
 x.sort_values().head() #Method Changing
 x.sort_index()
+astype() #The astype() method is used to cast a Pandas object to a particular data type. It can be a very helpful function in case your data is not stored in the correct format (data type). For instance, if floating point numbers have somehow been misinterpreted by Python as strings, you can convert them back to floating point numbers with astype().
+pd.read_csv()
+astype()
+to_datetime()
+value_counts()
+drop_duplicates()
+groupby()
+fillna()
+merge()
+
+```
+For More information click on [this lesson from LHL](https://data.compass.lighthouselabs.ca/1feac02f-2b81-409d-9192-9705596ef731)
 
 This method has been introduced to satissfy the increased demand for improved transformation of pandas Series to NumPy arrays.
 ```
@@ -89,10 +101,19 @@ Data Frames has the following parameters:
 - column
 - index
 
-![DataFrame Vs Series](/pics/DataFrame-VS-Series.png)
+![DataFrame Vs Series](/lighthouse-data-notes/pics/DataFrame-VS-Series-2.png)
 
-![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
+![DataFrame Vs Series](pics/DataFrame-VS-Series-2.png)
 
 ![DataFrame Vs Series](/pics/DataFrame-VS-Series-3.png)
 
 ## Boolean Comparisons
+
+- eq (equivalent to ==) — equals to
+- ne (equivalent to !=) — not equals to
+- le (equivalent to <=) — less than or equals to
+- lt (equivalent to <) — less than
+- ge (equivalent to >=) — greater than or equals to
+- gt (equivalent to >) — greater tha
+
+## ![how to get the values of DataFrame cheat-sheet](/Get-values-DataFrame.png)
