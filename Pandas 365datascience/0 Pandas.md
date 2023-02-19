@@ -101,12 +101,6 @@ Data Frames has the following parameters:
 - column
 - index
 
-![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
-
-![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
-
-![DataFrame Vs Series](/pics/DataFrame-VS-Series-3.png)
-
 ## Boolean Comparisons
 
 - eq (equivalent to ==) — equals to
