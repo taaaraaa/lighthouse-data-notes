@@ -116,4 +116,5 @@ Data Frames has the following parameters:
 - ge (equivalent to >=) — greater than or equals to
 - gt (equivalent to >) — greater tha
 
+### how to get the values of DataFrame cheat-sheet
 ## ![how to get the values of DataFrame cheat-sheet](Get-values-DataFrame.png)
