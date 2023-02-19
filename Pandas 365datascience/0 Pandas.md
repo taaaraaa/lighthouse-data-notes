@@ -12,9 +12,20 @@ x.idxmax()
 x.idxmin()
 x.head()
 x.tail()
-```
+x.describe()
+x.nunique()    # number of unique values in the Series
+x.unique()   #Delivers the values in the order they have appeared in the data set. 
+x.to_numpy()  #This code will convert the Series fully to the numpy array type!
+x.sort_values() #Sorts in Ascending order
+.copy() #copies the dataset
+x.sort_values().head() #Method Changing
+x.sort_index()
 
-Methods and functions are very similar. They both make specific opertions and return an output
+This method has been introduced to satissfy the increased demand for improved transformation of pandas Series to NumPy arrays.
+```
+- If we don't put () at the end of unique method, the output would be different! The examples are highlighted in [Pandas Series Lectures Notebook](/pandas-Series-Lectures-Notebook)
+
+- Methods and functions are very similar. They both make specific opertions and return an output
 ## 2. Parameters
 Parameters are associated with certain pandas method to modify the reuslts. It is a good practice to write the parameters with right acronym and right order!
 
@@ -39,6 +50,8 @@ x.name
 
 x.index
 
+x.array
+
 ## 5. Index Values
 - Label based indexing
 - Position based indexing = Axis Labels ~ a non numeric index
@@ -53,7 +66,7 @@ x['product A']=x[0]
 ## 6. Pandas Documentation
 It is a great reference for different Pandas Methods, Parameteres and so on! Click [Here](https://pandas.pydata.org/docs/user_guide/index.html) to access it!
 
-## 7. Data Types in Pandas:
+## 7. Object Types in Pandas:
 ### 7-1 Series
 
     Similar to arrays in Numpy. To create one we can do by the following:
@@ -82,3 +95,4 @@ Data Frames has the following parameters:
 
 ![DataFrame Vs Series](/pics/DataFrame-VS-Series-3.png)
 
+## Boolean Comparisons
