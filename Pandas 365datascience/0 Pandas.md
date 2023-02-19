@@ -101,9 +101,9 @@ Data Frames has the following parameters:
 - column
 - index
 
-![DataFrame Vs Series](/lighthouse-data-notes/pics/DataFrame-VS-Series-2.png)
+![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
 
-![DataFrame Vs Series](pics/DataFrame-VS-Series-2.png)
+![DataFrame Vs Series](/pics/DataFrame-VS-Series-2.png)
 
 ![DataFrame Vs Series](/pics/DataFrame-VS-Series-3.png)
 
@@ -116,4 +116,4 @@ Data Frames has the following parameters:
 - ge (equivalent to >=) — greater than or equals to
 - gt (equivalent to >) — greater tha
 
-## ![how to get the values of DataFrame cheat-sheet](/Get-values-DataFrame.png)
+## ![how to get the values of DataFrame cheat-sheet](Get-values-DataFrame.png)
