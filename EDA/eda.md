@@ -22,7 +22,43 @@ Data Exploration consists of the following parts:
 - Manual – using domain knowledge
 - Automatical – using Math
 
+## Outlier Detection
+Another important part of EDA and data preparation is the Outlier Detection. Sometimes, we have to deal with observations that are "extreme". Left ignored, these extremes can interfere with our model so it is important to address them at the outset.
 
+### We have two main types of outliers:
+
+- Univariate: we are looking at one variable at a time
+- Multivariate: even though there are no univariate outliers, we can spot some extreme values if we look at the values of multiple variables at the same time.
+
+There are a lot of reasons why outliers occur:
+
+- Data Entry Errors – e.g. people make mistakes when filling in a survey.
+- Measurement Errors – e.g. a device recording various measurements can be faulty.
+- Experimental Errors – we can make a mistake when experimenting.
+- Intentional Outliers – people can make "mistakes" intentionally, for example, in a loan application.
+- Sampling Errors – e.g. we might take a sample which is too small.
+- Natural Outliers – e.g. there might be a lot of snow one year and no snow in the following one.
+
+### What is the Impact of Outliers on a Dataset?
+Outliers can drastically change the results of data science projects. There are numerous impacts of outliers in a data set:
+
+They increase the error variance, therefore, reducing the power of statistical tests.
+They can bias or influence estimates that may be of substantive interest.
+They can also impact the basic assumption of a regression, and other statistical model assumptions.
+
+## How to Detect Outliers?
+In this section, we are going to present the most commonly used techniques of the outlier detection, which are:
+
+- Statistical tests
+- Distance-based approaches
+- Density-based approaches
+- Visualization
+
+# Visualization Tools
+
+- [Matplotlib](/EDA/Matplotlib.ipynb),
+- [Seaborn](/EDA/Seaborn.ipynb)
+- [Plotly](/EDA/Plotly.ipynb)
 
 
 
