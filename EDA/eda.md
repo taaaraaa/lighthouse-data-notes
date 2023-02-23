@@ -60,8 +60,27 @@ In this section, we are going to present the most commonly used techniques of th
 - [Seaborn](/EDA/Seaborn.ipynb)
 - [Plotly](/EDA/Plotly.ipynb)
 
+# data wrangling
 
 
+It is worth mentioning that the EDA process invariably includes tasks to clean and transform the data. The combination of cleaning and transforming data is known as data wrangling.
+
+## Data Wrangling in Python
+The Pandas framework of Python is used to execute the steps involved in data wrangling; steps such as sorting, filtering and grouping data.
+
+Data wrangling in Python deals with the below functionalities:
+
+### 1. Data exploration:
+ In this process, the data is studied, analyzed and understood by visualizing representations of data.
+
+### 2. Dealing with missing values: 
+Most datasets have a vast amount of missing values, NaN, that need to be taken care of by replacing them with mean, or mode, or simply by dropping the row with a NaN value.
+### 3. Reshaping data:
+ In this process, data is manipulated according to the requirements, where new data can be added or pre-existing data can be modified.
+### 4. Filtering data
+Sometimes datasets are comprised of unwanted rows or columns which need to be removed or filtered
+### 4. Other:
+ By this point, you should have an efficient dataset that can be used for a required purpose like data analysis, machine learning, data visualization, model training etc.
 
 
 
