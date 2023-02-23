@@ -4,15 +4,35 @@ The essential concept of the central limit theorem is that the average of our sa
 With hypothesis testing, It is important to select the right test for each problem. The tricky part is that there is no error produced if you choose the wrong test, you’ll just have incorrect results.
 
 # Python Libraries for Statistical Models
-- NumPy
+1. NumPy
 ``` python
-    import numpy as np
+import numpy as np
 ```
-- Matplotlib and Seaborn ( for Visualization)
+2. Matplotlib ( for Visualization)
 ``` python
-    import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 ```
-- SciPy for inferential statistics
+3. Seaborn
+4. SciPy for inferential statistics
+
+5. Statsmodels for advanced modeling
+``` python
+import statsmodels.api as sm
+```
+
+6. Scikit-learn for statistical learning
 
 
-- Statsmodels for advanced modeling
+# Model types
+## 1.  Regression Model
+
+Regression algorithms are used to determine continuous values such as price, income, age, etc.
+
+- **Simple Linear Regression:** This type is the least complicated form of regression, where there is a single independent variable that is continuous.
+
+- **Multiple Linear Regression:** This is an extension of simple linear regression, where there are at least two continuous independent variables.
+
+## 2. Classification Model
+
+Classification algorithms are used to forecast or classify distinct values such as True or False, Spam or Not Spam, etc.
+
