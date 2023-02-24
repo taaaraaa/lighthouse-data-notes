@@ -88,3 +88,4 @@ It is calculated be this formula:
 
 Cov (x,y) / (Stdev(x)*Stdev(y)) 
 
+
