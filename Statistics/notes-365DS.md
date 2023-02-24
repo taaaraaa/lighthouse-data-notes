@@ -81,7 +81,7 @@ Standard deviation relative to the mean
 - Sample: Sxy
 - Pop: σxy
 
-## 2. Linear Correlation Coefficient< 
+## 2. Linear Correlation Coefficient 
 -1=<Correlation Coeffiecint <=1
 
 It is calculated be this formula:
