@@ -46,6 +46,6 @@ Examples:
 
 - Point estimate is located at the middle of the confidence interval!
 
-Bias and Efficiency
+Bias and EfficiencyStatistics+Glossary.xlsx
 
 
