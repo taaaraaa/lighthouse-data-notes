@@ -1,5 +1,13 @@
 # Markdown Cheat Sheet
 
+
+### Table of Contents
+
+- [Heading](#heading)
+- [Bold](#bold)
+- [Italic](#italic)
+- [Color](#color)
+
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
 
 This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
@@ -117,3 +125,16 @@ H~2~O
 ### Superscript
 
 X^2^
+
+## Color
+<font color="red">This text is red!</font>
+
+## Admonitions
+------
+
+
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
