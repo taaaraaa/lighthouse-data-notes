@@ -1,6 +1,5 @@
 # Markdown Cheat Sheet
 
-
 ### Table of Contents
 
 - [Heading](#heading)
@@ -8,12 +7,14 @@
 - [Italic](#italic)
 - [Color](#color)
 
-For more hacks visit [This Github Markdown Repo](https://github.com/mattcone/markdown-guide)!
+For more hacks visit [This Github Markdown file](https://github.com/mattcone/markdown-guide/blob/master/hacks.md)!
 
+## Preview Markdown in VScode
+To see a preview of your md in VS code: 
+- Contol+K
+- release your hands
+- V
 
-## Basic Syntax
-
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
 ### Heading
 
