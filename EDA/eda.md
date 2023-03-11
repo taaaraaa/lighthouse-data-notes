@@ -68,6 +68,13 @@ Other General Methods:
 - [Seaborn](/EDA/Seaborn.ipynb)
 - [Plotly](/EDA/Plotly.ipynb)
 
+# Data Transformation (Variable Transformation)
+
+1. Basic transformations (e.g., logarithmic (making it more normally distributed))
+2. Binning (e.g., grouping numbers into bins)
+3. Scaling (e.g., setting everything between 0 and 1)
+4. Dummy variables (e.g., turning categories into multiple columns of binary variables) - BE CAREFUL
+
 # Data Wrangling
 
 It is worth mentioning that the EDA process invariably includes tasks to clean and transform the data. The combination of cleaning and transforming data is known as data wrangling.
