@@ -1,5 +1,7 @@
 # Kinds of machine learning
 
+Click for [Data Preparation and Feature Engineering Tutorial](https://github.com/taaaraaa/lighthouse-data-notes/blob/main/EDA/Data_Prep_and_Feature_Engineering.ipynb) as the prerequisite step in ML
+
 ## 1. Supervised learning
 In supervised learning, each data point is labeled or associated with a category or value of interest. An example of a categorical label is assigning an image as either a ‘cat’ or a ‘dog’. An example of a value label is the sale price associated with a used car. The goal of supervised learning is to study many labeled examples like these, and then to be able to make predictions about future data points. For example, identifying new photos with the correct animal or assigning accurate sale prices to other used cars. This is a popular and useful type of machine learning.
 
