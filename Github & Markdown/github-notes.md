@@ -1,7 +1,7 @@
 ## How to clone in github 
 Tip: In other words, it is to Copy/download to your local computer.
 - From terminal (Git Bash or Powershell promt) go to the folder you want to clone the folders. You should use double coat if there is a space in your folder name. 
-    - for example in powershell promt: (THE_ONE) PS C:\Users\tara> cd "LHL Bootcamp"
+    - for example in powershell promt: (THE_ONE) PS C:\Users\...> cd "LHL Bootcamp"
 - Write this code: **git clone X**
     - X is the repository web address (eighther in HTTPS or SSH)
 
