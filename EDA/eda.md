@@ -2,13 +2,13 @@
 Exploratory data analysis (EDA) involves using graphics and visualizations to explore and analyze a dataset.
 - EDA can be used for data cleaning
 - Subgroup analyses
-- for understanding your data better
+- Understanding the data better
 - With EDA, you can find anomalies in your data, such as outliers or unusual observations
-- uncover patterns
-- understand potential relationships among variables
-- generate interesting questions or hypotheses that you can test later using more formal statistical methods
-- the distribution of variables in your dataset. That is, what is the shape of your data? Is the distribution normal? Does it have a fat tail? Is it skewed? Is it bimodal?
-- whether or not your data have outliers or unusual points. This may indicate data quality issues or lead to interesting insights.
+- Uncover patterns
+- Understand potential relationships among variables
+- Generate interesting questions or hypotheses that you can test later using more formal statistical methods
+- The distribution of variables in your dataset. That is, what is the shape of your data? Is the distribution normal? Does it have a fat tail? Is it skewed? Is it bimodal?
+- Whether or not the data has outliers or unusual points. This may indicate data quality issues or lead to interesting insights.
 # Data Exploration
 It often gives us the first glance at what is important in our data and what is garbage.
 
@@ -49,6 +49,14 @@ They can also impact the basic assumption of a regression, and other statistical
 ## How to Detect Outliers?
 In this section, we are going to present the most commonly used techniques of the outlier detection, which are:
 
+According to [this notebook](https://github.com/taaaraaa/lighthouse-data-notes/blob/main/EDA/Data_Prep_and_Feature_Engineering.ipynb):
+- Method 1: Summary of the data: using pandas and describe()
+- Method 2: Visualizing a Single Variable
+- Method 3: Visualizing Multi-Variables
+- Method 4: Z-Score
+
+Other General Methods:
+
 - Statistical tests
 - Distance-based approaches
 - Density-based approaches
@@ -56,12 +64,11 @@ In this section, we are going to present the most commonly used techniques of th
 
 # Visualization Tools
 
-- [Matplotlib](/EDA/Matplotlib.ipynb),
+- [Matplotlib](/EDA/Matplotlib.ipynb)
 - [Seaborn](/EDA/Seaborn.ipynb)
 - [Plotly](/EDA/Plotly.ipynb)
 
-# data wrangling
-
+# Data Wrangling
 
 It is worth mentioning that the EDA process invariably includes tasks to clean and transform the data. The combination of cleaning and transforming data is known as data wrangling.
 
