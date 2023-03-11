@@ -22,6 +22,5 @@ In order to upload changes to files to your repo, follow these steps in Git Bash
 - git commit
     - Taking all the files that has been staged (added), and making them ready to be uploaded. You need to wire a comment: **git commit -m "I updated..."**
 - git push 
-    - It upload the final changes to the github: you write **git push**https://www.markdownguide.org/basic-syntax/
-
+    - It upload the final changes to the github: you write **git push**
 
