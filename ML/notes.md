@@ -36,3 +36,40 @@ In reinforcement learning, the algorithm gets to choose an action in response to
 
 This cycle continues untill the means are the same as previous centroids
 
+If we run the Kmeans several times, it would give us different results. The best one is the one with the least Inertia.
+
+ > **Inertia** is a performance metric. it's the mean squared distance between each instance and its closest centroid
+
+You can control how many times  you want to run your K-Means via n_init. Sklearn runs it 10 times by default and return the model with the best score.
+
+### 2 ways to choose K:
+- Domain experience
+- Exploring different Ks
+
+``` Python
+#Running Kmeans for several times
+wcss = [] #Within cluster sum squares
+for i in range(2,15):
+    km = KMeans(n_clusters= i, random_state=seed)
+    km.fit(X)
+    wcss.append(km.inertia_)
+```
+### Elbow Method
+
+After plotting inertia vs K, we can see what is the optimum number of clusters. (Elbow point)
+
+
+
+### silhouette score
+
+A more precise approach to choose the optimum K (but also more computationally expensive) is to use the silhouette score. The closer sil score to 1, the better.
+
+The silhouette coefficient can vary between -1 and +1: a coefficient close to +1 means that the instance is well inside its own cluster and far from other clusters, while a coefficient close to 0 means that it is close to a cluster boundary, and finally a coefficient close to -1 means that the instance may have been assigned to the wrong cluster.
+``` python
+from sklearn.metrics import silhouette_score
+
+km = KMeans(n_clusters = 5)
+km.fit(X)
+silhouette_score(X, km.labels_)
+```
+:memo: **Note:** In Unsupervised Learning, machine does the clustering, you need to do the interpretation yourself. When we have more than two or three dimensions. It's harder to interpret the results by simply plotting it. So we do EDA on each cluster to get more about it (why these customers are in the same segment/cluster).
