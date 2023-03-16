@@ -60,7 +60,7 @@ After plotting inertia vs K, we can see what is the optimum number of clusters. 
 
 
 
-### silhouette score
+### Silhouette Score
 
 A more precise approach to choose the optimum K (but also more computationally expensive) is to use the silhouette score. The closer sil score to 1, the better.
 
@@ -73,3 +73,8 @@ km.fit(X)
 silhouette_score(X, km.labels_)
 ```
 :memo: **Note:** In Unsupervised Learning, machine does the clustering, you need to do the interpretation yourself. When we have more than two or three dimensions. It's harder to interpret the results by simply plotting it. So we do EDA on each cluster to get more about it (why these customers are in the same segment/cluster).
+
+:memo: **Note:** 
+
+> - K-Means is sensitive to outliers as we take the mean to calculate centroids. You can use median instead if you have outliers.
+> - It's important to scale your data before feeding it to K-Means. If you didn't the feature with a larger range will affect distance more than the others.
