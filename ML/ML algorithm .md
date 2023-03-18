@@ -20,7 +20,9 @@ R^2 can be calculated as below too:
 
 There is a R^2 reduction in variance when we take the independent variable (such as mouse weight) into account! In other words, we can say that mouse weight explains R^2 % of the variation in mouse size!
 
-## Perform Regression in Python using Statsmodels
+## Perform Regression in Python
+
+We can use either  Statsmodels or Skilearn, below is he example for *Statsmodels**
 
 ``` Python
 import pandas as pd
