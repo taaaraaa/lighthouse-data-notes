@@ -37,8 +37,43 @@ One of the most popular one is scikit-learn/sklearn! It integrates well with the
 
 ______________________________
 
+**LOSS FUNCTION**
+
+We need to know how far our model is from the actual values. This function measures how far an estimated value of a quantity is from the true value. 
+
+**RISK FUNCTION**
+
+We calculate the risk function by taking the expected value of the loss function.
+
+**Arg Min**
+
+We are looking for a function h from a pool of functions H that minimizes the risk function.
+
 ## Generalization Error
 
+There are the three main things that can go wrong during the training of ML model which contribute to the overall generalization error:
+
+- Approximation Error
+- Estimation Error
+- Optimization Error
+
+### Approximation Error
+
+If we choose an H (the pool of functions h we can choose from) or an l which are too simple, the accuracy of our model will be negatively affected by the approximation error.
+
+For example, if we have an image classification task and we choose the H as any logistic regression (or another model not complex enough for this kind of task). In this case, no matter how much data we have, we will end up with a poor model because of a big approximation error.
+
+### Estimation Error
+
+We deal with the estimation error when we don't feed the model with enough data. Complex functions require more data to learn properly. Let's take a look at the example from before:
+
+We have an image classification task and we correctly choose to train a model with Deep Neural Networks but we only have 100 pictures in our training set. No matter what we do, our model will be weak because of a huge estimation error.
+
+### Optimization Error
+
+The optimization error occurs when we have a loss function which is too complex, and as a result we don't find the optimal solution. A huge amount of observations can increase the optimization error as well.
+
+Sometimes, in real life, we can even train a model on a sample only to make sure that we have the right amount of data.
 
 -----------------------------
 
