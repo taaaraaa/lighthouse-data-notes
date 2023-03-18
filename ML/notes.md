@@ -20,6 +20,9 @@ In supervised learning, each data point is labeled or associated with a category
 
 ### 1.1 Classification or categorization: 
 When the target variable  consists of categories
+There are two types:
+- binary 
+- multinomial classification
 ### 1.2 Regression
 When the target variable is continuous
 
@@ -34,6 +37,8 @@ When the target variable is continuous
 ## Supervised Learning in Python
 
 One of the most popular one is scikit-learn/sklearn! It integrates well with the SciPy stack (such as numpy and pundas). We can also use other libraries such as TensorFlow!
+
+We can also use statsmodel
 
 ______________________________
 
