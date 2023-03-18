@@ -23,7 +23,7 @@ There is a R^2 reduction in variance when we take the independent variable (such
 :bulb: **Tip:** When we add another dependent variable to our linear regression model, the R-squared increases, which tempts you to add more. Some of the independent variables will be statistically significant.
 
 ## Perform Regression in Python
-you can [follow this notebook]()
+you can [follow this notebook](https://github.com/taaaraaa/lighthouse-data-notes/blob/main/ML/Linear%20Regression%20in%20ML.ipynb)
 
 We can use either  Statsmodels or Skilearn, below is he example for *Statsmodels**
 
