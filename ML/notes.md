@@ -22,7 +22,22 @@ In supervised learning, each data point is labeled or associated with a category
 When the target variable  consists of categories
 There are two types:
 - binary 
+    
+   - will you click on the ad? Yes / No
+
+    - spam or not spam email? 
+
 - multinomial classification
+
+Two common types of data inf classification:
+1. Images (ex.MNIST) -- **Computer Vision**
+2. Text (ex.emails) **NLP** Natural Language Processing
+
+:memo: **Note:** In fact the entire internet is made up of these 2 types. Video is a subset of images.
+
+:memo: **Note:** These two fields have been transformed by deep learning!
+
+
 ### 1.2 Regression
 When the target variable is continuous
 
@@ -38,7 +53,7 @@ When the target variable is continuous
 
 One of the most popular one is scikit-learn/sklearn! It integrates well with the SciPy stack (such as numpy and pundas). We can also use other libraries such as TensorFlow!
 
-We can also use statsmodel
+We can also use statsmodels
 
 ______________________________
 

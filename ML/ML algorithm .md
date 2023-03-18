@@ -1,4 +1,7 @@
 # Linear Regression
+There are two types: Simple Linear Regression and Multiple Linear Regression (one feature vs several features)
+
+We calculate by doing the following:
 - Use least-squares to fit a line to the data
 - Calculate R^2
 - Calculate a p-value for R^2
@@ -25,32 +28,9 @@ There is a R^2 reduction in variance when we take the independent variable (such
 ## Perform Regression in Python
 you can [follow this notebook](https://github.com/taaaraaa/lighthouse-data-notes/blob/main/ML/Linear%20Regression%20in%20ML.ipynb)
 
-We can use either  Statsmodels or Skilearn, below is he example for *Statsmodels**
+We can use either  Statsmodels or Skilearn, below is the output example for *Statsmodels**
 
-``` Python
-import pandas as pd
-import statsmodels.api as sm
 
-data = {'year': [2017,2017,2017,2017,2017,2017,2017,2017,2017,2017,2017,2017,2016,2016,2016,2016,2016,2016,2016,2016,2016,2016,2016,2016],
-        'month': [12,11,10,9,8,7,6,5,4,3,2,1,12,11,10,9,8,7,6,5,4,3,2,1],
-        'interest_rate': [2.75,2.5,2.5,2.5,2.5,2.5,2.5,2.25,2.25,2.25,2,2,2,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75],
-        'unemployment_rate': [5.3,5.3,5.3,5.3,5.4,5.6,5.5,5.5,5.5,5.6,5.7,5.9,6,5.9,5.8,6.1,6.2,6.1,6.1,6.1,5.9,6.2,6.2,6.1],
-        'index_price': [1464,1394,1357,1293,1256,1254,1234,1195,1159,1167,1130,1075,1047,965,943,958,971,949,884,866,876,822,704,719]        
-        }
-
-df = pd.DataFrame(data) 
-
-x = df[['interest_rate','unemployment_rate']]
-y = df['index_price']
-
-x = sm.add_constant(x)
-
-model = sm.OLS(y, x).fit()
-predictions = model.predict(x) 
-
-print_model = model.summary()
-print(print_model)
-```
 ``` python
                             OLS Regression Results                            
 ==============================================================================
@@ -93,6 +73,10 @@ several important components within the results:
 7. **Confidence Interval** represents the range in which our coefficients are likely to fall (with a likelihood of 95%)
 
 
+# Polynomial Regression
+
+y = bo x + b1x1 + b1x12 + ... + bnx1n
 
 
+:bulb: **Tip:** The main difference between multinomial and polynomial regression is that we still use only one feature but with many transformations.
 
