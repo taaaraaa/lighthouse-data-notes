@@ -2,8 +2,15 @@
 There are three types: 
 1. Simple Linear Regression (one feature )
 > y=b0+b1x1
+
+        b0=intercept/constant/bias
+        b1=coefficient/slope
+
 2. Multiple Linear Regression (several features)
 > y = b0 +b1x1+b2x2+...+bnxn
+
+![matrix representation]('../data/matrix-representation.png')
+
 3. Polynomial Regression (one feature )
 > y = b0+ b1x1 + b1x1^2 + ... + bnx1^n
 
