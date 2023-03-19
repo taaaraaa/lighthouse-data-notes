@@ -5,20 +5,28 @@ Click for [Data Preparation and Feature Engineering Tutorial](https://github.com
 It is the science and art of giving computers the ability to make decisions from data without being explicitly programed. For example, learning to predict whether an email is spam or not!
 ## 1. Supervised learning
 
-For this type of ML we need **Labeled data** :
-- by usning historical data with labeles
+For this type of ML we need **Labeled data**. We collect labled data by:
+- Usning historical data with labeles
 - Experiments to get labeled data, such as A/B testing
 - Crowd-sourcing labeled data
 
 
-Feature=predictor variable=independent variable
+> `Feature=predictor variable=independent variable`
 
-Target variable=dependent variable=response variable
+> `Target variable=dependent variable=response variable`
 
+:warning: **Warning:** This first step is splitting data into train and test before doing any EDA! 
 
 In supervised learning, each data point is labeled or associated with a category or value of interest. An example of a categorical label is assigning an image as either a ‘cat’ or a ‘dog’. An example of a value label is the sale price associated with a used car. The goal of supervised learning is to study many labeled examples like these, and then to be able to make predictions about future data points. For example, identifying new photos with the correct animal or assigning accurate sale prices to other used cars. This is a popular and useful type of machine learning.
 
-:warning: **Warning:** This first step is splitting data into train and test before doing any EDA! 
+
+### Funamental Tradeoff:
+- **Overfit**: Model is too complex
+    - Training score high and test score low
+    - It can result from **Variance Error** (to be sensitive to small fluctuations)
+- **Underfit**: Model is very simple
+    - Training score low and test score low
+    - It can result from **Bias Error** (high bias can cause an algorithm to miss important relations between features and target variable)
 
 ### 1.1 Classification or categorization: 
 When the target variable  consists of categories
