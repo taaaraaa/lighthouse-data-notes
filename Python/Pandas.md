@@ -3,7 +3,7 @@
 
 df = pd.read_csv('weight-height.csv', usecols = ['Height', 'Weight'])
 ```
-## Reading a CSV file that are splitted by ; instead of ,
+## Reading a CSV file that are splitted by `;` instead of `,`
 ``` python
 
 df = pd.read_csv('weight-height.csv', ,sep=';') 
