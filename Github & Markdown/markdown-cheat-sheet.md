@@ -73,6 +73,7 @@ To see a preview of your md in VS code:
 ### Image
 
 ![alt text](https://www.markdownguide.org/assets/images/tux.png)
+![matrix representation](../data/matrix-representation.png "matrix representation in multi linear regression")
 
 ## Extended Syntax
 
