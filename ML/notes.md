@@ -32,6 +32,8 @@ In supervised learning, each data point is labeled or associated with a category
     - Training score low and test score low
     - It can result from **Bias Error** (high bias can cause an algorithm to miss important relations between features and target variable)
 
+![img](https://miro.medium.com/max/2250/1*_7OPgojau8hkiPUiHoGK_w.png)
+
 ### 1.1 Classification or categorization: 
 When the target variable  consists of categories
 There are two types:
