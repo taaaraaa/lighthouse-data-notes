@@ -9,7 +9,7 @@ There are three types:
 2. Multiple Linear Regression (several features)
 > y = b0 +b1x1+b2x2+...+bnxn
 
-![matrix representation]('../data/matrix-representation.png')
+![matrix representation](../data/matrix-representation.png)
 
 3. Polynomial Regression (one feature )
 > y = b0+ b1x1 + b1x1^2 + ... + bnx1^n
