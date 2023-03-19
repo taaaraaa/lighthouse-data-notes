@@ -18,6 +18,8 @@ Target variable=dependent variable=response variable
 
 In supervised learning, each data point is labeled or associated with a category or value of interest. An example of a categorical label is assigning an image as either a ‘cat’ or a ‘dog’. An example of a value label is the sale price associated with a used car. The goal of supervised learning is to study many labeled examples like these, and then to be able to make predictions about future data points. For example, identifying new photos with the correct animal or assigning accurate sale prices to other used cars. This is a popular and useful type of machine learning.
 
+:warning: **Warning:** This first step is splitting data into train and test before doing any EDA! 
+
 ### 1.1 Classification or categorization: 
 When the target variable  consists of categories
 There are two types:
@@ -25,9 +27,11 @@ There are two types:
     
    - will you click on the ad? Yes / No
 
-    - spam or not spam email? 
+   - spam or not spam email? 
+   - whether a patient has a liver disease or not?
 
 - multinomial classification
+    - predict the letter grade of a student (A,B,C,D or F)
 
 Two common types of data inf classification:
 1. Images (ex.MNIST) -- **Computer Vision**
@@ -39,7 +43,9 @@ Two common types of data inf classification:
 
 
 ### 1.2 Regression
-When the target variable is continuous
+When the target variable is continuous. For example:
+- Predict house price
+- Predict someone's age based on their photo
 
 ### Usages of Supervised learning
 - Automate time-consuming or expensive manual tasks:

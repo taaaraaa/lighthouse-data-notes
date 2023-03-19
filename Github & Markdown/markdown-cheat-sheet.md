@@ -34,6 +34,18 @@ To see a preview of your md in VS code:
 
 > blockquote
 
+
+
+## Admonitions
+------
+
+
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
+
 ### Ordered List
 
 1. First item
@@ -128,13 +140,3 @@ X^2^
 
 ## Color
 <font color="red">This text is red!</font>
-
-## Admonitions
-------
-
-
-> :warning: **Warning:** Do not push the big red button.
-
-> :memo: **Note:** Sunrises are beautiful.
-
-> :bulb: **Tip:** Remember to appreciate the little things in life.
