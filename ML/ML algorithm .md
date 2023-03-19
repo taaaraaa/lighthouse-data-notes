@@ -1,5 +1,12 @@
 # Linear Regression
-There are two types: Simple Linear Regression and Multiple Linear Regression (one feature vs several features)
+There are three types: 
+1. Simple Linear Regression (one feature )
+> y=b0+b1x1
+2. Multiple Linear Regression (several features)
+> y = b0 +b1x1+b2x2+...+bnxn
+3. Polynomial Regression (one feature )
+> y = b0+ b1x1 + b1x1^2 + ... + bnx1^n
+
 
 We calculate by doing the following:
 - Use least-squares to fit a line to the data
@@ -73,10 +80,11 @@ several important components within the results:
 7. **Confidence Interval** represents the range in which our coefficients are likely to fall (with a likelihood of 95%)
 
 
-# Polynomial Regression
+# Polynomial Linear Regression
 
-y = bo x + b1x1 + b1x12 + ... + bnx1n
+> y = b0+ b1x1 + b1x1^2 + ... + bnx1^n
 
 
 :bulb: **Tip:** The main difference between multinomial and polynomial regression is that we still use only one feature but with many transformations.
 
+:bulb: **Tip:** IT is still called linear, because it is calculating coefficients (b)
