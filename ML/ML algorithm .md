@@ -123,3 +123,8 @@ Random forest is a flexible, easy-to-use machine learning algorithm that produce
 XGBoost is a special type of a gradient boosting algorithm. It is very popular in practice because of its speed and accuracy. It has an impressive record of winning Kaggle competitions and it can be even more effective than Deep Neural Networks. When we have to deal with the classic tabular data trade-off between training time and accuracy we will always be favoring XGBoost.
 
 There's a big chance that this is the algorithm we will end up using for many predictive modeling use-cases. 
+
+-----------
+## What is Ensemble Learning?
+
+Ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.
