@@ -4,7 +4,7 @@ There are three types:
 > y=b0+b1x1
 
         b0=intercept/constant/bias
-        b1=coefficient/slope
+        b1=coefficient/slope/weight
 
 2. Multiple Linear Regression (several features)
 > y = b0 +b1x1+b2x2+...+bnxn
@@ -95,3 +95,18 @@ several important components within the results:
 :bulb: **Tip:** The main difference between multinomial and polynomial regression is that we still use only one feature but with many transformations.
 
 :bulb: **Tip:** IT is still called linear, because it is calculating coefficients (b)
+
+# SVM
+The Support Vector Machine (SVM) is a supervised machine learning algorithm that can be employed for both classification and regression purposes. The SVM is more commonly used in classification problems and as such, this is what we will focus on for now.
+
+# Logistic Regression
+It is the most frequently applied classification method.
+
+The types of Logistic Regression:
+
+1. Binary Logistic Regression – the categorical response has only two possible outcomes. Example: Spam or Not.
+2. Multinomial Logistic Regression – three or more categories without ordering. Example: Predicting which food is more preferred: Veg/Non-Veg/Vegan.
+Ordinal Logistic Regression– three or more categories with ordering. Example: Movie rating from 1 to 5.
+------------------------
+## What is a Decision Tree?
+Decision Trees are a non-parametric supervised learning method used for classification and regression. Decision trees learn from data to approximate a curve with a set of if-then-else decision rules. The decision tree builds classification or regression models in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while, at the same time, an associated decision tree is incrementally developed. The final result is a tree with decision nodes and leaf nodes.
