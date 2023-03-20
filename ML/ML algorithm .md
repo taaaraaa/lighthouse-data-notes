@@ -117,3 +117,9 @@ Decision Trees are a non-parametric supervised learning method used for classifi
 ## Random Forest
 Random forest is a flexible, easy-to-use machine learning algorithm that produces, even without hyper-parameter tuning, a great result most of the time. It is also one of the most frequently used algorithms, because of its simplicity and diversity (it can be used for both classification and regression tasks).
 
+------------
+## XGBoost
+
+XGBoost is a special type of a gradient boosting algorithm. It is very popular in practice because of its speed and accuracy. It has an impressive record of winning Kaggle competitions and it can be even more effective than Deep Neural Networks. When we have to deal with the classic tabular data trade-off between training time and accuracy we will always be favoring XGBoost.
+
+There's a big chance that this is the algorithm we will end up using for many predictive modeling use-cases. 
