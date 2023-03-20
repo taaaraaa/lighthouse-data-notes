@@ -109,4 +109,11 @@ The types of Logistic Regression:
 Ordinal Logistic Regression– three or more categories with ordering. Example: Movie rating from 1 to 5.
 ------------------------
 ## What is a Decision Tree?
+
+
 Decision Trees are a non-parametric supervised learning method used for classification and regression. Decision trees learn from data to approximate a curve with a set of if-then-else decision rules. The decision tree builds classification or regression models in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while, at the same time, an associated decision tree is incrementally developed. The final result is a tree with decision nodes and leaf nodes.
+
+---------------
+## Random Forest
+Random forest is a flexible, easy-to-use machine learning algorithm that produces, even without hyper-parameter tuning, a great result most of the time. It is also one of the most frequently used algorithms, because of its simplicity and diversity (it can be used for both classification and regression tasks).
+
