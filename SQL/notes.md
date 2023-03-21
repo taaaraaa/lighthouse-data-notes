@@ -29,3 +29,7 @@
  ``` SQL
 SELECT * FROM persons;
 ```
+
+## How to select a random 1000 rows of a table
+select * from table where random() < 0.01 limit 1000;
+
