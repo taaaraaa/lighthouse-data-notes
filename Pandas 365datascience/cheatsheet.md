@@ -1,4 +1,8 @@
-## drop a col
+## Importing a CSV file
+
+airbnb_data = pd.read_csv("data/listings_austin.csv")
+
+## Drop a col
 ``` python
 
 # create a sample dataframe
@@ -12,7 +16,12 @@ df = df.drop('City', axis=1)
 df = df.drop(columns=['Age', 'City'])
 print(df)
 ```
-## rename a col
+## Drop the Rows with NaN Values in Pandas DataFrame
+``` python
+df = df.dropna()
+```
+
+## Rename a col
 ``` python
 df = df.rename(columns={'City': 'Location', 'aaa':'bbb'})
 ```
@@ -75,7 +84,7 @@ a_avg = a.groupby('month').mean().reset_index()
 fig1 = plt.hist(X['arr_delay_log'])
 plt.show()
 
-## create combo chart
+## Create combo chart
 ``` python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -103,14 +112,26 @@ df_13_14_target[['month', '2013_val', '2014_val']].plot(x='month', kind='bar',
 plt.show()
 ```
 
-## Drop the Rows with NaN Values in Pandas DataFrame
-``` python
-df = df.dropna()
-```
+
 ## reorder cols
 df = df[['mean', '0', '1', '2', '3']]
 
-# Filter based on col value
+## Filter based on col value
 ```python
 df[df['cancelled']==0]
+```
+## Select sample random rows
+``` python
+# To get 3 random rows
+# each time it gives 3 different rows
+ 
+# df.sample(n = 3) or
+df.sample(3)
+```
+
+``` python
+# Fraction of rows
+ 
+# here you get .50 % of the rows
+df.sample(frac = 0.5)
 ```
