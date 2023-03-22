@@ -102,3 +102,15 @@ df_13_14_target[['month', '2013_val', '2014_val']].plot(x='month', kind='bar',
 
 plt.show()
 ```
+
+## Drop the Rows with NaN Values in Pandas DataFrame
+``` python
+df = df.dropna()
+```
+## reorder cols
+df = df[['mean', '0', '1', '2', '3']]
+
+# Filter based on col value
+```python
+df[df['cancelled']==0]
+```
