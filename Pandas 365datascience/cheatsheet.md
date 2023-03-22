@@ -20,7 +20,17 @@ print(df)
 ``` python
 df = df.dropna()
 ```
+## Add a col
+``` python
+#adding empty col
+df["D"] = np.nan
+```
+``` python
+#adding values to the empty col
 
+for i in range(1):
+    df.loc[i,['D','E']]=['apple','banana']
+```
 ## Rename a col
 ``` python
 df = df.rename(columns={'City': 'Location', 'aaa':'bbb'})
@@ -120,6 +130,10 @@ df = df[['mean', '0', '1', '2', '3']]
 ```python
 df[df['cancelled']==0]
 ```
+``` python
+# select rows containing 'bbi'
+df.filter(like='bbi', axis=0)
+```
 ## Select sample random rows
 ``` python
 # To get 3 random rows
@@ -134,4 +148,15 @@ df.sample(3)
  
 # here you get .50 % of the rows
 df.sample(frac = 0.5)
+```
+
+## Reset Index
+``` python
+df.reset_index()
+```
+
+## Replace space with dash
+
+``` python
+X_weather_2['origin_city_name'] = X_weather_2['origin_city_name'].str.replace(' ', '-')
 ```
