@@ -33,9 +33,14 @@ SELECT * FROM persons;
 ## How to select a random 1000 rows of a table
 select * from table where random() < 0.01 limit 1000;
 
-## et the number of rows, columns, and file size in pgAdmin 4
+## get the number of rows, columns, and file size in pgAdmin 4
 ``` sql
 SELECT relname, reltuples, relpages * 8 / 1024 AS "Size (MB)", relkind 
 FROM pg_class 
 WHERE relname = 'table_name';
+```
+## number of unique values of a col
+
+``` sql
+SELECT COUNT(DISTINCT branded_code_share) FROM flights;
 ```
