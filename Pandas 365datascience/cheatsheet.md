@@ -1,19 +1,38 @@
 ## Importing a CSV file
-
+``` python
 airbnb_data = pd.read_csv("data/listings_austin.csv")
+```
+## Reading a CSV file, but choosing only some columns
+``` python
+df = pd.read_csv('weight-height.csv', usecols = ['Height', 'Weight'])
+```
+## Reading a CSV file that are splitted by `;` instead of `,`
+``` python
+df = pd.read_csv('weight-height.csv', ,sep=';') 
+```
+## Importing a parquet file
+``` python
+pip install pandas pyarrow fastparquet
+
+df = pd.read_parquet('./tables/flights_sample_large.parquet')
+```
+
+## Exmporting as a CSV file
+``` python
+df.to_csv('my_data.csv', index=False)
+```
+## Exmporting as a parquet file
+``` python
+df.to_parquet('my_data.parquet', index=False)
+```
+
 
 ## Drop a col
 ``` python
-
-# create a sample dataframe
-df = pd.DataFrame({'Name': ['John', 'Emily', 'Tom', 'Anna'],
-                   'Age': [28, 35, 42, 23],
-                   'City': ['New York', 'Chicago', 'Los Angeles', 'Houston']})
-
 # drop the 'City' column
-df = df.drop('City', axis=1)
+df = df.drop('col_name', axis=1)
 
-df = df.drop(columns=['Age', 'City'])
+df = df.drop(columns=['col_1', 'col_2'])
 print(df)
 ```
 ## Drop the Rows with NaN Values in Pandas DataFrame
@@ -134,6 +153,10 @@ df[df['cancelled']==0]
 # select rows containing 'bbi'
 df.filter(like='bbi', axis=0)
 ```
+``` python
+#filter based on values of two columns
+filtered=X2[(X2['tail_num'] == 'N569JB') & (X2['fl_date'] == '2018-01-01')]
+```
 ## Select sample random rows
 ``` python
 # To get 3 random rows
@@ -152,7 +175,8 @@ df.sample(frac = 0.5)
 
 ## Reset Index
 ``` python
-df.reset_index()
+# (drop=True) will remove previous index col
+df.reset_index(drop=True)
 ```
 
 ## Replace space with dash
