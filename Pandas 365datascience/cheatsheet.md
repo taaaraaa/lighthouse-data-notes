@@ -108,6 +108,11 @@ States_air_traffic['origin_city_name'] = States_air_traffic['origin_city_name'].
 ``` python
 a_avg = a.groupby('month').mean().reset_index()
 ```
+``` python
+# how to filter a df if a certain col has one of the certain values
+filtered_df = df[df['col1'].isin(['a', 'c'])]
+```
+
 ## Histogram
 
 fig1 = plt.hist(X['arr_delay_log'])
