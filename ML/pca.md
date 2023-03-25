@@ -6,6 +6,9 @@ Dimensionality reduction (reducing the number of features) can result in:
 - Lower computational complexity (time and space)
 - Improve model performance (e.g. accuracy)
 - Avoid over-fitting
+- mitigate the curse of dimensionality
+
+> :memo: **Note:** The curse of dimensionality refers to a set of problems that arise when working with high-dimensional data. The curse of dimensionality basically means that the error increases with the increase in the number of features. It refers to the fact that algorithms are harder to design in high dimensions and often have a running time exponential in the dimensions. The dimension of a dataset corresponds to the number of attributes or features that exist in it.
 
 ## How can we reduce the number of features?
 
@@ -156,4 +159,4 @@ Slow (must re-train model each time)
 - Should we deal with outliers prior to PCA? (Yes)
 - Does the information loss in PCA, mean that we disregard some rows in the modeling? (No, columns or features are combined)
 - How to identify the extreme cases where PCA is not useful and cause loosing lots of information? (I think with the variance graph)
-- It seams that PCA deals with outliers in some way. Am I right?
+- It seams that PCA deals with outliers in some way. Am I right? (No, PCA reduces the dimensionality without losing information from any features. )
