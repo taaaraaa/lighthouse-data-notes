@@ -17,8 +17,23 @@ Dimensionality reduction (reducing the number of features) can result in:
 
     - Filter methods
     - Wrapper methods
------------
 
+## Feature Selection vs Dimensionality Reduction
+
+1. PCA and LDA are dimensionality reduction techniques
+2. Filter and Wrapper methods are variable selection techniques
+### Dimensionality reduction:
+ Creates new features that are functions of the original ones (for PCA/LDA, linear combinations of the original ones).
+
+-   Less information lost
+-   Less interpretability
+
+#### Feature Selection: 
+Removes redundant features and keeps important ones (no new features created).
+
+-   More information lost
+-   More interpretability
+-----------
 ## What is PCA?
 PCA represents many variables with fewer variables while minimizing loss of information!
 
@@ -69,3 +84,76 @@ pd.DataFrame(reduced_df).head() #as a dataframe
 - Does the information loss in PCA, mean that we disregard some rows in the modeling?
 - How to identify the extreme cases where PCA is not useful and cause loosing lots of information? (I think with the variance graph)
 - It seams that PCA deals with outliers in some way. Am I right?
+
+-------------------------------
+
+## What is LDA?
+LDA is Linear Discriminant Analysis
+.
+
+> :bulb: **Tip:** Remember that LDA is for supervised ML and can only be done for classification/categorical target variable.
+
+### PCA vs LDA
+
+1. Both are dimensionality reduction techniques.
+2. Both create new dimensions by using linear combinations of original dimensions to minimize losing information
+3. PCA is most popular
+4. PCA is unsupervised, LDA is supervised (categorical target variable)
+
+5. PCA creates successive PCs in directions of MOST variance
+6. LDA creates successive components that
+    - Minimize “intra-class” variance
+    - Maximize “inter-class” variance
+
+
+![pca vs lda](../data/PCA.vs.LDA.png)
+
+
+
+------------
+
+## Filter Methods
+
+1. Give each feature a “score” that represents how “important” it is.
+
+    Scores can be based on:
+
+    - Correlation with target variable
+    - High/low variance (imagin all data of a col is 1, so we delete that column)
+    - Feature similarity (correlation between features)
+
+2. Keep features with high scores, discard features with low scores.
+3. This method is applied before training ML model
+
+### Advantages: 
+- Fast—no training involved, just calculations
+### Disadvantages: 
+- Can ignore feature combinations
+- May keep redundant features
+
+![feature selection](../data/feature-selection.png)
+------------
+
+## Wrapper Methods
+Train model multiple times with different combinations of subsets of features.
+Goal is to find the “best” subset of features.
+
+### Advantages:
+
+- Evaluates features in context of others
+- Performance-driven
+
+### Disadvantages:
+Slow (must re-train model each time)
+
+### Popular wrapper methods:
+
+- Forward selection
+- Backward selection
+- Stepwise selection
+
+## Wrapper VS filtering
+
+- Filter methods are done before training (score each feature, keep best scores)
+- Wrapper methods are done by re-training the model with different subsets (forward, backward, stepwise)
+
