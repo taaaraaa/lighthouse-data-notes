@@ -1,4 +1,4 @@
-# A shortcut for Coding ML in Python
+# A shortcut for  ML Coding in Python
 ``` python
 import numpy as np
 import pandas as pd
@@ -32,4 +32,17 @@ reduced_df = pca.transform(df)
 
 print(reduced_df.shape)
 pd.DataFrame(reduced_df).head() #as a dataframe
+```
+``` python
+cum_explained_variance = np.cumsum(pca.explained_variance_ratio_)
+plt.plot(cum_explained_variance)
+plt.xlabel('PC number')
+plt.ylabel('% Cumulative explained variance')
+```
+
+``` python
+# Get the actual PCs from the sklearn PCA model
+PCs = pca.components_
+print('PC matrix shape: {}'.format(PCs.shape))
+pd.DataFrame(PCs).head()
 ```
