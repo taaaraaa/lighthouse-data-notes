@@ -76,15 +76,6 @@ reduced_df = pca.transform(df)
 print(reduced_df.shape)
 pd.DataFrame(reduced_df).head() #as a dataframe
 ```
-## My Questions
-- Why not using PCA for clustering before modeling?
-- Do we use PCA for classification before or after modeling?
-- Should we scale all the features? How can we do it? ( yes we should, trough StandardScaler)
-- Should we deal with outliers prior to PCA? (Yes, I think so)
-- Does the information loss in PCA, mean that we disregard some rows in the modeling?
-- How to identify the extreme cases where PCA is not useful and cause loosing lots of information? (I think with the variance graph)
-- It seams that PCA deals with outliers in some way. Am I right?
-
 -------------------------------
 
 ## What is LDA?
@@ -157,3 +148,12 @@ Slow (must re-train model each time)
 - Filter methods are done before training (score each feature, keep best scores)
 - Wrapper methods are done by re-training the model with different subsets (forward, backward, stepwise)
 
+-----------------------------
+## My Questions
+- Why not using PCA for clustering before modeling? (It is mostly used before modeling. I need to ask Jeremy, why told so)
+- Do we use PCA for classification before or after modeling?
+- Should we [scale](./Scaling_data.md) all the features? How can we do it? ( yes we should, trough StandardScaler or MinMaxScaler)
+- Should we deal with outliers prior to PCA? (Yes)
+- Does the information loss in PCA, mean that we disregard some rows in the modeling? (No, columns or features are combined)
+- How to identify the extreme cases where PCA is not useful and cause loosing lots of information? (I think with the variance graph)
+- It seams that PCA deals with outliers in some way. Am I right?
