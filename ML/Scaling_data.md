@@ -1,3 +1,9 @@
+## Types of Scaling
+- MinMaxScaler: *< from sklearn.preprocessing import MinMaxScaler >*
+- StandardScaler:  *< from sklearn.preprocessing import StandardScaler >*
+- Log normalization : *< numpy.log >*
+
+> The choice of scaling method depends on the nature of your data and the specific problem you are trying to solve.
 ## MinMaxScaler (data between 0 and 1)
 For each value in a feature, MinMaxScaler subtracts the minimum value in the feature and then divides by the range. The range is the difference between the original maximum and original minimum. MinMaxScaler preserves the shape of the original distribution.
 ### Coding
@@ -65,3 +71,19 @@ In this example, the StandardScaler standardizes each column in the dataframe to
 
 ## MinMaxscaler vs. StandardScaler
 The MinMaxscaler is a type of scaler that scales the minimum and maximum values to be 0 and 1 respectively. While the StandardScaler scales all values between min and max so that they fall within a range from min to max.Jul 27, 2020
+
+---------------
+## Log Normalization
+- Useful for features with high variance. It reduces variance in the column and make it comparable to other columns in the model
+- Applies logarithm transformation which approximates normality
+- Takes the ***natural log*** of each number using the constant e(~2.718)
+- It captures relative changes, the magnitude of change, and keeps everything positive
+
+### Coding
+
+!['log normalization'](../data/log-normalization.png)
+
+
+> :memo: **Note:** you can use different scaling methods for different dimensions (i.e., columns) of your data. In fact, it's quite common to use different scaling methods for different features in a dataset. It's important to choose the appropriate scaling method for each feature in your dataset based on the nature of the data and the problem you are trying to solve.
+
+> :memo: **Note:** However, keep in mind that applying different scaling methods to different features may impact the relationships between the features, and may affect the performance of some machine learning algorithms that assume the data is scaled uniformly. So, it's important to carefully consider the consequences of applying different scaling methods to different features.
