@@ -1,4 +1,4 @@
-# A shortcut for Coding in Python
+# A shortcut for Coding ML in Python
 ``` python
 import numpy as np
 import pandas as pd
