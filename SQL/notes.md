@@ -39,7 +39,7 @@ SELECT relname, reltuples, relpages * 8 / 1024 AS "Size (MB)", relkind
 FROM pg_class 
 WHERE relname = 'table_name';
 ```
-## number of unique values of a col
+## Number of unique values of a col
 
 ``` sql
 SELECT COUNT(DISTINCT branded_code_share) FROM flights;
