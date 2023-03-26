@@ -1,0 +1,7 @@
+## ML and Big Data
+
+Machine learning and Big Data overlap only slightly but when the two are used together they can work real wonders.
+
+Machine learning comes from heavy calculations done on top of existing data to create a model that can help us to make the right decisions and predictions. Since the calculations are extensive, we can quickly reach our computation limit when working locally.
+
+This classic approach of developing models on our own machines is perfectly fine in most scenarios. Most of the time, with regression or typical binary classification, it is enough to use tens or hundreds of thousands of observations – a volume we can easily deal with using our own computers at home or at work.
