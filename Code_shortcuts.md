@@ -1,4 +1,4 @@
-# A shortcut for  ML Coding in Python
+# Shortcuts for  ML Coding in Python
 ``` python
 import numpy as np
 import pandas as pd
@@ -45,4 +45,13 @@ plt.ylabel('% Cumulative explained variance')
 PCs = pca.components_
 print('PC matrix shape: {}'.format(PCs.shape))
 pd.DataFrame(PCs).head()
+```
+## Silhouette Score
+To choose K in Unsupervised Learning for K-means method, we use the following Code:
+``` python
+from sklearn.metrics import silhouette_score
+
+km = KMeans(n_clusters = 5)
+km.fit(X)
+silhouette_score(X, km.labels_)
 ```
