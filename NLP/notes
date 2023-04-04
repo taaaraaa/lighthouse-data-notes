@@ -1,4 +1,50 @@
 # Natural Language Processing
 
-Natural Language Processing, or NLP for short, is broadly defined as the automatic manipulation of natural language, like speech and text, by software.
+Natural Language Processing, or NLP for short, is broadly defined as the automatic manipulation of natural language, like speech and text, by software. In other words, NLP is interaction between computers and humans using a natural language!
+
+**It is the technology used to aid computers to understand the human’s natural language.**
+
+## What is NLP used for?
+
+Natural Language Processing is the driving force behind the following common applications:
+
+- Language translation applications such as Google Translate
+- Word Processors such as Microsoft Word and Grammarly that employ NLP to check grammatical accuracy of texts.
+- Interactive Voice Response (IVR) applications used in call centers to respond to certain users’ requests.
+- Personal assistant applications such as OK Google, Siri, Cortana, and Alexa.
+
+## What are the techniques used in NLP?
+
+Syntactic analysis and semantic analysis are the main techniques used to complete Natural Language Processing tasks.
+
+Here is a description on how they can be used.
+
+### 1. Syntax
+
+Syntax refers to the arrangement of words in a sentence such that they make grammatical sense.
+
+In NLP, syntactic analysis is used to assess how the natural language aligns with the grammatical rules.
+
+Computer algorithms are used to apply grammatical rules to a group of words and derive meaning from them.
+
+Here are some syntax techniques that can be used:
+
+- **Lemmatization**: It entails reducing the various inflected forms of a word into a single form for easy analysis.
+- **Morphological segmentation**: It involves dividing words into individual units called morphemes.
+- **Word segmentation**: It involves dividing a large piece of continuous text into distinct units.
+- **Part-of-speech tagging**: It involves identifying the part of speech for every word.
+- **Parsing**: It involves undertaking grammatical analysis for the provided sentence.
+- **Sentence breaking**: It involves placing sentence boundaries on a large piece of text.
+- **Stemming**: It involves cutting the inflected words to their root form.
+
+### 2. Semantics
+Semantics refers to the meaning that is conveyed by a text. Semantic analysis is one of the difficult aspects of Natural Language Processing that has not been fully resolved yet.
+
+It involves applying computer algorithms to understand the meaning and interpretation of words and how sentences are structured.
+
+Here are some techniques in semantic analysis:
+
+- **Named entity recognition (NER)**: It involves determining the parts of a text that can be identified and categorized into preset groups. Examples of such groups include names of people and names of places.
+- **Word sense disambiguation**: It involves giving meaning to a word based on the context.
+- **Natural language generation**: It involves using databases to derive semantic intentions and convert them into human language.
 
