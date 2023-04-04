@@ -48,3 +48,7 @@ Here are some techniques in semantic analysis:
 - **Word sense disambiguation**: It involves giving meaning to a word based on the context.
 - **Natural language generation**: It involves using databases to derive semantic intentions and convert them into human language.
 
+## Tokenization and Cleaning with NLTK
+The Natural Language Toolkit, or NLTK for short, is a Python library written for working and modeling text.
+
+It provides good tools for loading and cleaning text that we can use to get our data ready for working with machine learning and deep learning algorithms.
