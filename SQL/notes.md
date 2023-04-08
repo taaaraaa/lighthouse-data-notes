@@ -44,3 +44,6 @@ WHERE relname = 'table_name';
 ``` sql
 SELECT COUNT(DISTINCT branded_code_share) FROM flights;
 ```
+## ERD Diagram
+Usefull tool to draw it:
+https://www.diagrams.net/
