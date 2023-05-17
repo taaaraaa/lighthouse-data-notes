@@ -37,3 +37,6 @@ Shift+tab = See documentation
 - Restart and Clear output: The codes will remain without having been run. You would see No output
 
 - Restart and Run All Cells
+
+## Google Drive
+We can use [Colab app](https://colab.research.google.com/drive/) to add notebooks in google drive
